@@ -1,0 +1,51 @@
+#banner{
+    width: 100%; /*Largura relativa, ocupa todo o espaço do super elemento*/
+}
+
+.parte-principal {
+    background-color: #cccccc; /*Cor em hexadecimal #rrggbb valor de 00-ff*/
+    padding: 30px; /*espaçamento interno, espaço entre o elemento e sua borda.*/
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+    margin: 10px; /*espaçamento externo, espaço entre a borda do elementro e outro elemento*/
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+em strong { /*Seleção hierarquica, todos os strongs dentro de em*/
+    color: red; /*Cor pelo nome da cor*/
+}
+.parte-secundaria {
+    background-color: rgb(255,255,255); /*Cor pela função rgb(red, green, blue) valor de 0-255*/
+    padding: 20px;
+}
+
+.item {
+    font-style: italic;
+}
+
+.beneficios {
+    display: inline-block; 
+        /*block - tag ocupa a linha inteira, comportamento padrão
+        inline - ocupa só seu espaço, mas não deixa mexer na margem e padding
+        inline-block - ocupa só seu espaço, e da pra mexer nos espaçamentos*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+#imagem-beneficio {
+    width: 50%;
+}

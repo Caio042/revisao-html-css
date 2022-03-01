@@ -1,51 +1,48 @@
-#banner{
-    width: 100%; /*Largura relativa, ocupa todo o espaço do super elemento*/
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
 }
 
-.parte-principal {
-    background-color: #cccccc; /*Cor em hexadecimal #rrggbb valor de 00-ff*/
-    padding: 30px; /*espaçamento interno, espaço entre o elemento e sua borda.*/
+.container {
+    position: relative;
+    width: 940px; /*tamanho padrão na web, já que a maioria das boas resoluções é mais ou menos 1080p*/
+    margin: 0 auto; /*Auto calcula as margens laterais*/
 }
 
-.titulo-centralizado {
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*top, right, botton, left*//*15px para esquerda*/
+}
+
+nav a {
+    /*Conteúdo aparece visualmente como maisculo, mas está minusculo*/
+    /*Se transformar visualmente o input de um form, ele será enviado da maneira que foi escrito*/
+    /*Deve ser usado quando o maisculo é puramente visual, os leitores de tela não reconhecem CSS*/
+    /*Já coisas como INSS devem ser maisculo no HTML*/
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C18;
+    text-decoration: underline;
+}
+
+footer {
     text-align: center;
+    background: url("../images/bg.jpg"); /*Imagem de fundo*/
 }
-
-.titulo-principal {
-    padding-left: 20px;
-    margin: 10px; /*espaçamento externo, espaço entre a borda do elementro e outro elemento*/
-}
-
-p {
-    text-align: center;
-}
-
-#missao {
-    font-size: 20px;
-}
-
-em strong { /*Seleção hierarquica, todos os strongs dentro de em*/
-    color: red; /*Cor pelo nome da cor*/
-}
-.parte-secundaria {
-    background-color: rgb(255,255,255); /*Cor pela função rgb(red, green, blue) valor de 0-255*/
-    padding: 20px;
-}
-
-.item {
-    font-style: italic;
-}
-
-.beneficios {
-    display: inline-block; 
-        /*block - tag ocupa a linha inteira, comportamento padrão
-        inline - ocupa só seu espaço, mas não deixa mexer na margem e padding
-        inline-block - ocupa só seu espaço, e da pra mexer nos espaçamentos*/
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
-
-#imagem-beneficio {
-    width: 50%;
+.copyleft {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
 }
