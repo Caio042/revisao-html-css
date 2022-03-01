@@ -1,32 +1,54 @@
-<!DOCTYPE html> <!--Especificar ao navegador a versão do HTML. Nesse caso a última disponivel-->
+<!DOCTYPE html><!--Especificar ao navegador a versão do HTML. Nesse caso a última disponivel-->
 <html lang="pt-br">
-    <head> <!--Dados para o navegador-->
-        <meta charset="UTF-8">
-        <title>Barbearia</title>
-        <link rel="stylesheet" href="assets/css/style.css"/>
-    </head>
-    <body><!--Conteúdo que será exibido-->
-        <header> <!-- Cabeçalho -->
-            <h1 class="titulo-principal">Barbearia</h1>
-        </header>
-        <img id="banner" src="assets/images/imagem.jpg">
-        <div class="parte-principal">
-            <h2 class="titulo-centralizado">Lorem ipsum dolor sit </h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor <strong>inventore aspernatur</strong> rem nobis dignissimos veniam natus illum totam earum! Consequuntur neque sit porro ad consectetur eligendi, sed officia sunt. Nam?</p>
 
-            <p id="missao"><em>Nossa missão: <strong>Soluta, dolores.</strong></em></p>
+<head><!--Dados para o navegador-->
+    <meta charset="UTF-8">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header-footer.css" />
+</head>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, obcaecati corrupti. Placeat omnis minus esse!</p>
+<body><!--Conteúdo que será exibido-->
+    <header><!-- Cabeçalho -->
+        <div class="container">
+            <h1><img src="assets/images/logo.png" /></h1>
+            <nav><!--Tag para menu de navegação-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="parte-secundaria">
-            <h3 class="titulo-centralizado">Beneficios</h3>
-            <ul> <!-- unordered list-->
-                <li class="item">Lorem ipsum</li> <!--List itens-->
-                <li class="item">Lorem ipsum</li>
-                <li class="item">Lorem ipsum</li>
-                <li class="item">Lorem ipsum</li>
-            </ul>
-            <img id="imagem-benefício" src="assets/images/imagem.jpg">
-        </div>
-    </body>
+    </header>
+    <img id="banner" src="assets/images/imagem.jpg">
+    <div class="parte-principal">
+        <h2 class="titulo-centralizado">Lorem ipsum dolor sit </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor <strong>inventore aspernatur</strong> rem
+            nobis dignissimos veniam natus illum totam earum! Consequuntur neque sit porro ad consectetur eligendi, sed
+            officia sunt. Nam?</p>
+
+        <p id="missao"><em>Nossa missão: <strong>Soluta, dolores.</strong></em></p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, obcaecati corrupti. Placeat omnis minus
+            esse!</p>
+    </div>
+    <div class="parte-secundaria">
+        <h3 class="titulo-centralizado">Beneficios</h3>
+        <ul class="beneficios"><!-- unordered list-->
+            <li class="item">Lorem ipsum</li><!--List itens-->
+            <li class="item">Lorem ipsum</li>
+            <li class="item">Lorem ipsum</li>
+            <li class="item">Lorem ipsum</li>
+        </ul>
+        <img id="imagem-benefício" src="assets/images/imagem.jpg">
+    </div>
+
+    <footer>
+        <img src="assets/images/logo-branco.png"/>
+        <p class="copyleft">&copy; Copyleft</p>
+    </footer>
+</body>
+
 </html>

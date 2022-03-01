@@ -1,42 +1,3 @@
-header {
-    background-color: #bbbbbb;
-    padding: 20px 0;
-}
-
-.caixa {
-    position: relative;
-    width: 940px; /*tamanho padrão na web, já que a maioria das boas resoluções é mais ou menos 1080p*/
-    margin: 0 auto; /*Auto calcula as margens laterais*/
-}
-
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 15px; /*top, right, botton, left*//*15px para esquerda*/
-}
-
-nav a {
-    /*Conteúdo aparece visualmente como maisculo, mas está minusculo*/
-    /*Se transformar visualmente o input de um form, ele será enviado da maneira que foi escrito*/
-    /*Deve ser usado quando o maisculo é puramente visual, os leitores de tela não reconhecem CSS*/
-    /*Já coisas como INSS devem ser maisculo no HTML*/
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #C78C18;
-    text-decoration: underline;
-}
-
 .produtos {
     width: 940px;
     margin: 0 auto;
@@ -85,14 +46,4 @@ nav a:hover {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    background: url("../images/bg.jpg"); /*Imagem de fundo*/
-}
-.copyleft {
-    color: #ffffff;
-    font-size: 13px;
-    margin-top: 20px;
 }

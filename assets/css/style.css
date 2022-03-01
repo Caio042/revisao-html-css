@@ -36,7 +36,7 @@ em strong { /*Seleção hierarquica, todos os strongs dentro de em*/
     font-style: italic;
 }
 
-ul {
+.beneficios {
     display: inline-block; 
         /*block - tag ocupa a linha inteira, comportamento padrão
         inline - ocupa só seu espaço, mas não deixa mexer na margem e padding
