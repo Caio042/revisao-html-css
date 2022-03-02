@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contato.css" />
     <title>Contato</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1><img src="assets/images/logo.png" /></h1>
+            <h1><img src="assets/images/logo.png" alt="logo da barbearia" /></h1>
             <nav>
-                <!--Tag para menu de navegação-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
@@ -23,11 +25,73 @@
         </div>
     </header>
     <main>
+        <form action="">
+            <label for="nome">Nome completo</label>
+            <input type="text" name="nome" id="nome" class="input-padrao" required>
 
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="input-padrao" required placeholder="email@email.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(11) 99999-9999">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
+
+            <fieldset class="contato"><!--Campos de um mesmo assunto-->
+                <legend>Como prefere nosso contato?</legend><!--Titulo do fieldset-->
+                <label for="radio-email"><input type="radio" name="contato" id="radio-email"
+                        value="radio-email">email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone"
+                        value="radio-telefone">telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp"
+                        value="radio-whatsapp" checked>whatsapp</label>
+            </fieldset>
+
+            <fieldset class="horario-atendimento">
+                <legend>Em qual horário quer ser atendido?</legend>
+                <select>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" name="novidades-email" id="novidades-email" checked> Gostaria
+                de
+                receber novidades por email?</label>
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>
+            <thead> <!--Cabeçalho da tabela-->
+                <tr>
+                    <th>Dias</th>
+                    <th>Horários</th>
+                </tr>
+            </thead>
+            <tbody> <!--Corpo da tabela-->
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
-        <img src="assets/images/logo-branco.png"/>
+        <img src="assets/images/logo-branco.png" alt="logo da barbearia" />
         <p class="copyleft">&copy; Copyleft</p>
     </footer>
 </body>
+
 </html>
