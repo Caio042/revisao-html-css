@@ -57,3 +57,38 @@ td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+
+@media screen and (max-width: 480px) { 
+    main {
+        width: auto;
+    }
+
+    form {
+        margin: 20px auto;
+        width: auto;
+    }
+
+    .input-padrao {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .enviar {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    form label, form legend { 
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    table {
+        margin: 20px;
+    }
+
+    .horario-atendimento {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

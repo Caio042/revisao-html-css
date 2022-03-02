@@ -46,3 +46,17 @@ footer {
     font-size: 13px;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 480px) { /*Numa tela até 480px o conteúdo é apresentado dessa maneira*/
+    .container {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+}

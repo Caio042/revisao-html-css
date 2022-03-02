@@ -1,24 +1,42 @@
-#banner{
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.banner{
     width: 100%; /*Largura relativa, ocupa todo o espaço do super elemento*/
 }
 
 .parte-principal {
-    background-color: #cccccc; /*Cor em hexadecimal #rrggbb valor de 00-ff*/
-    padding: 30px; /*espaçamento interno, espaço entre o elemento e sua borda.*/
-}
-
-.titulo-centralizado {
-    text-align: center;
+    background: #FEFEFE; /*Cor em hexadecimal #rrggbb valor de 00-ff*/
+    padding: 3em 0; /*espaçamento interno, espaço entre o elemento e sua borda.*/
+    width: 940px;
+    margin: 0 auto;
 }
 
 .titulo-principal {
-    padding-left: 20px;
-    margin: 10px; /*espaçamento externo, espaço entre a borda do elementro e outro elemento*/
+    text-align: center;
+    font-size: 2em; /*O dobro do tamanho padrão*//*em = medida relativa em relação ao tamanho da fonte*/
+    margin: 0 0 1em; /*Margem para baixo do tamanho da fonte*/
+    clear: left; /*Limpa float*/
+    color: rgba(0, 0, 0, 0.3);/*rgba, última cada, alpha, controla a opacidade, nesse caso 30%*/
 }
 
-p {
-    text-align: center;
+.titulo-principal:first-letter {
+    font-weight: bold;
 }
+
+.parte-principal p {
+    margin: 0 0 1em;
+}
+
+.parte-principal strong {
+    font-weight: bold;
+}
+.parte-principal em {
+    font-style: italic;
+}
+
 
 #missao {
     font-size: 20px;
@@ -27,25 +45,85 @@ p {
 em strong { /*Seleção hierarquica, todos os strongs dentro de em*/
     color: red; /*Cor pelo nome da cor*/
 }
-.parte-secundaria {
-    background-color: rgb(255,255,255); /*Cor pela função rgb(red, green, blue) valor de 0-255*/
-    padding: 20px;
+
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
-.item {
-    font-style: italic;
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888); /*Transição em gradiente*/
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios {
     display: inline-block; 
         /*block - tag ocupa a linha inteira, comportamento padrão
         inline - ocupa só seu espaço, mas não deixa mexer na margem e padding
         inline-block - ocupa só seu espaço, e da pra mexer nos espaçamentos*/
+    width: 40%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
 }
 
-#imagem-beneficio {
-    width: 50%;
+.item {
+    line-height: 1.5em;
+}
+
+.item::before { 
+    content: "\235F"; /*pseudo elemento antes de cada item*/
+}
+
+.item:nth-child(2n) { /*first-child - pseudoclasse para o primeiro elemento da classse
+    também é possivel pegar o último, ou selecionar por index usando o nth-child(numero)
+    nth-child também pode ser utilizado para pegar todos os elementos dividiveis por algo, nthchild(2n) pega todos os pares.*/
+    font-weight: bold;
+}
+
+.imagem-beneficio {
+    width: 60%;
+    opacity: 100%;
+    transition: 1s;
+    box-shadow: 10px 10px 10px #000000; /*sombra, tamanho x tamanho y blur cor */
+}
+
+.imagem-beneficio:hover {
+    opacity: 30%;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) { /*Numa tela até 480px o conteúdo é apresentado dessa maneira*/
+
+    .parte-principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    .lista-beneficios, .imagem-beneficio {
+        width: 100%;
+    }
 }
